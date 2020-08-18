@@ -6,7 +6,7 @@
   <parent>
     <artifactId>PetClinic001</artifactId>
     <groupId>org.ac</groupId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
   </parent>
 
   <artifactId>PetClinic001Web</artifactId>
@@ -15,7 +15,7 @@
     <dependency>
       <groupId>org.ac</groupId>
 	    <artifactId>PetClinic001Data</artifactId>
-	    <version>0.0.1</version>
+	    <version>0.0.2-SNAPSHOT</version>
     </dependency> 
     <dependency>
 			<groupId>org.springframework.boot</groupId>
