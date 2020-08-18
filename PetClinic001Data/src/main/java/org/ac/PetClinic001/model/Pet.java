@@ -1,4 +1,4 @@
-package org.ac.PetClinic001Data.model;
+package org.ac.PetClinic001.model;
 
 import java.time.LocalDate;
 
