@@ -50,8 +50,8 @@
 		</plugins>
 	</build>
 
-	<scm>
+	<!-- <scm>
 		<developerConnection>scm:git:https://github.com/Eldurlin/PetClinic001.git</developerConnection>
-	</scm>
+	</scm> -->
 
 </project>
