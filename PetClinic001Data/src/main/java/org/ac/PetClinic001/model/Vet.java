@@ -1,10 +1,15 @@
 package org.ac.PetClinic001.model;
 
-public class Vet extends Person {
+import java.util.Set;
 
-    /**
-     *
-     */
-    private static final long serialVersionUID = 1L;
-    
+public class Vet extends Person {
+    private Set<Speciality> specialities;
+
+    public Set<Speciality> getSpecialities() {
+        return specialities;
+    }
+
+    public void setSpecialities(Set<Speciality> specialities) {
+        this.specialities = specialities;
+    }
 }
