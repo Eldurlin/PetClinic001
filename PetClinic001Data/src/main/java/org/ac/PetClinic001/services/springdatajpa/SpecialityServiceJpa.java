@@ -2,7 +2,7 @@ package org.ac.PetClinic001.services.springdatajpa;
 
 import org.ac.PetClinic001.model.Speciality;
 import org.ac.PetClinic001.repositories.SpecialityRepo;
-import org.ac.PetClinic001.services.SpecialitiesService;
+import org.ac.PetClinic001.services.SpecialityService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
@@ -11,10 +11,10 @@ import java.util.Set;
 
 @Service
 @Profile("springdatajpa")
-public class SpecialitiesServiceJpa implements SpecialitiesService {
+public class SpecialityServiceJpa implements SpecialityService {
     private final SpecialityRepo specialityRepo;
 
-    public SpecialitiesServiceJpa(SpecialityRepo specialityRepo) {
+    public SpecialityServiceJpa(SpecialityRepo specialityRepo) {
         this.specialityRepo = specialityRepo;
     }
 

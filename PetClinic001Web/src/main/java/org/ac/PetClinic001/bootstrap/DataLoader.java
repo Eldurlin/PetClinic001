@@ -3,7 +3,7 @@ package org.ac.PetClinic001.bootstrap;
 import org.ac.PetClinic001.model.*;
 import org.ac.PetClinic001.services.OwnerService;
 import org.ac.PetClinic001.services.PetTypeService;
-import org.ac.PetClinic001.services.SpecialitiesService;
+import org.ac.PetClinic001.services.SpecialityService;
 import org.ac.PetClinic001.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -15,13 +15,13 @@ public class DataLoader implements CommandLineRunner {
 	private final OwnerService ownerService;
 	private final VetService vetService;
 	private final PetTypeService petTypeService;
-	private final SpecialitiesService specialitiesService;
+	private final SpecialityService specialityService;
 
-	public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialitiesService specialitiesService) {
+	public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialityService specialityService) {
 		this.ownerService = ownerService;
 		this.vetService = vetService;
 		this.petTypeService = petTypeService;
-		this.specialitiesService = specialitiesService;
+		this.specialityService = specialityService;
 	}
 
 	@Override
@@ -40,11 +40,11 @@ public class DataLoader implements CommandLineRunner {
 
 		Speciality radiology = new Speciality();
 		radiology.setDescription("Radiology");
-		Speciality savedRadiology = specialitiesService.save(radiology);
+		Speciality savedRadiology = specialityService.save(radiology);
 
 		Speciality surgery = new Speciality();
 		surgery.setDescription("Surgery");
-		Speciality savedSurgery = specialitiesService.save(surgery);
+		Speciality savedSurgery = specialityService.save(surgery);
 
 		Owner owner1 = new Owner();
 		owner1.setFirstName("Esseral");
